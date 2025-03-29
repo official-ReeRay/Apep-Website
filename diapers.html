@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Website - Shopping Cart | Codehal</title>
+    <link rel="stylesheet" href="styled.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo">Apep Sanitary</a>
+      <div id="cart-icon">
+        <i class="ri-shopping-bag-line"></i>
+        <span class="cart-item-count"></span>
+      </div>
+    </header>
+
+    <div class="cart">
+      <h2 class="cart-title">Your Cart</h2>
+
+      <div class="cart-content">
+      <!--  <div class="cart-box">
+          <img src="images/product1.jpg" class="cart-img" />
+          <div class="cart-detail">
+            <h2 class="cart-product-title">Casual Black Polo</h2>
+            <span class="cart-price">$100</span>
+            <div class="cart-quantity">
+              <button id="decrement">-</button>
+              <span class="number">1</span>
+              <button id="increment">+</button>
+            </div>
+          </div>
+          <i class="ri-delete-bin-line cart-remove"></i>
+        </div>-->
+      </div>
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+      </div>
+      <button class="btn-buy">Buy Now</button>
+      <i class="ri-close-line" id="cart-close"></i>
+    </div>
+    
+
+
+
+    <section class="shop">
+      <h1 class="section-title">Shop Products</h1>
+      <div class="product-content">
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo wipes.png" />
+          </div>
+          <h2 class="product-title">Predo clean care wipes(72s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$1.50</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/softcare wipes.png"/>
+          </div>
+          <h2 class="product-title">Softcare Baby wipes(80s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$1.50</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo d 1.png" />
+          </div>
+          <h2 class="product-title">Predo Prem.J/PK size 1(54s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$6</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo d 2.png" />
+          </div>
+          <h2 class="product-title">Predo Prem.J/PK size 2(76s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$9</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo d 3.png" />
+          </div>
+          <h2 class="product-title">Predo Prem.J/PK size 3(68s)MID</h2>
+          <div class="price-and-cart">
+            <span class="price">$9</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo d 4.png" />
+          </div>
+          <h2 class="product-title">Predo Prem.J/PK size 4(60s) MAX</h2>
+          <div class="price-and-cart">
+            <span class="price">$9</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo d 5.png" />
+          </div>
+          <h2 class="product-title">Predo Prem.J/PK size 5(52s)JNR</h2>
+          <div class="price-and-cart">
+            <span class="price">$9</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo p 3 .png"" />
+          </div>
+          <h2 class="product-title">Predo Pants Adv Pack size 3(44s)MID</h2>
+          <div class="price-and-cart">
+            <span class="price">$7</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo p 4 .png" />
+          </div>
+          <h2 class="product-title">Predo Pants Adv Pack size 4(40s)MAX</h2>
+          <div class="price-and-cart">
+            <span class="price">$7</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo p 5.png" />
+          </div>
+          <h2 class="product-title">Predo Pants Adv Pack size 5(32s)JNR</h2>
+          <div class="price-and-cart">
+            <span class="price">$7</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/hug dc 1.png" />
+          </div>
+          <h2 class="product-title">Huggies dry comfort size 1(96s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$11</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/hug dc 2.png" />
+          </div>
+          <h2 class="product-title">Huggies dry comfort size 2(94s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$11</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/hug dc 3.png" />
+          </div>
+          <h2 class="product-title">Huggies dry comfort size 3(76s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$11</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/hug dc 4.png" />
+          </div>
+          <h2 class="product-title">Huggies dry comfort size 4(66s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$11</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/hug dc 4+.png" />
+          </div>
+          <h2 class="product-title">Huggies dry comfort size 4+(60s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$11</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/hug dc 5.png" />
+          </div>
+          <h2 class="product-title">Huggies dry comfort size 5(56s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$11</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/hug g 1.png" />
+          </div>
+          <h2 class="product-title">Huggies gold size 1(96s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$13</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/hug g 2.png" />
+          </div>
+          <h2 class="product-title">Huggies gold size 2(62s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$13</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/hug g 3.png" />
+          </div>
+          <h2 class="product-title">Huggies gold size 3(52s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$13</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/hug g 4.png" />
+          </div>
+          <h2 class="product-title">Huggies gold size 4(66s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$13</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/hug g 4+.png" />
+          </div>
+          <h2 class="product-title">Huggies gold size 4+(60s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$13</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/hug g 5.png" />
+          </div>
+          <h2 class="product-title">Huggies gold size 5(56s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$13</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/slip j 2.png" />
+          </div>
+          <h2 class="product-title">Slip Bebe J/Pack size 2(90s)MINI</h2>
+          <div class="price-and-cart">
+            <span class="price">$8</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/slip j 3.png" />
+          </div>
+          <h2 class="product-title">Slip Bebe J/Pack size 3(80s)MIDI</h2>
+          <div class="price-and-cart">
+            <span class="price">$9</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/slip j 4.png" />
+          </div>
+          <h2 class="product-title">Slip Bebe J/Pack size 4(70s)MAX</h2>
+          <div class="price-and-cart">
+            <span class="price">$9</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/slip j 5.png" />
+          </div>
+          <h2 class="product-title">Slip Bebe J/Pack size 5(60s)XL</h2>
+          <div class="price-and-cart">
+            <span class="price">$9</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/slip 2.png" />
+          </div>
+          <h2 class="product-title">Slip Bebe diapers (100s) (2) Small</h2>
+          <div class="price-and-cart">
+            <span class="price">$11</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/slip 3.jpg" />
+          </div>
+          <h2 class="product-title">Slip Bebe diapers (100s) (3)Medium</h2>
+          <div class="price-and-cart">
+            <span class="price">$13</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/slip 4.jpg" />
+          </div>
+          <h2 class="product-title">Slip Bebe diapers (100s) (4) Large</h2>
+          <div class="price-and-cart">
+            <span class="price">$14</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/slip 5.jpg" />
+          </div>
+          <h2 class="product-title">Slip Bebe diapers (100s) (5) X-Large</h2>
+          <div class="price-and-cart">
+            <span class="price">$16</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/slip p3.jpg" />
+          </div>
+          <h2 class="product-title">Slip Bebe pants (100s) (3) Medium</h2>
+          <div class="price-and-cart">
+            <span class="price">$15</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/slip p4.jpg" />
+          </div>
+          <h2 class="product-title">Slip Bebe pants (100s) (4)Large</h2>
+          <div class="price-and-cart">
+            <span class="price">$16</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/slip p5.jpg" />
+          </div>
+          <h2 class="product-title">Slip Bebe pants (100s) (5) X-Large</h2>
+          <div class="price-and-cart">
+            <span class="price">$17</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/slip p6.jpg" />
+          </div>
+          <h2 class="product-title">Slip Bebe pants (100s) (6) XX-Large</h2>
+          <div class="price-and-cart">
+            <span class="price">$18</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo ad m.png" />
+          </div>
+          <h2 class="product-title">Predo adult diapers Medium(30s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$13</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo ad l.png" />
+          </div>
+          <h2 class="product-title">Predo adult diapers Large(30s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$14</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo ad xl.png" />
+          </div>
+          <h2 class="product-title">Predo adult diapers X-Large(30s)</h2>
+          <div class="price-and-cart">
+            <span class="price">$15</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo ap m.png" />
+          </div>
+          <h2 class="product-title">Predo adult pants(15s)MEDIUM</h2>
+          <div class="price-and-cart">
+            <span class="price">$7</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo ap l.png" />
+          </div>
+          <h2 class="product-title">Predo adult pants(13s)LARGE</h2>
+          <div class="price-and-cart">
+            <span class="price">$7</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo ap xl.png" />
+          </div>
+          <h2 class="product-title">Predo adult pants(13s)X-LARGE</h2>
+          <div class="price-and-cart">
+            <span class="price">$7</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo p n.png" />
+          </div>
+          <h2 class="product-title">Predo Sanitary Pads normal</h2>
+          <div class="price-and-cart">
+            <span class="price">$1</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo p  l.png" />
+          </div>
+          <h2 class="product-title">Predo Sanitary Pads long</h2>
+          <div class="price-and-cart">
+            <span class="price">$1</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/predo p  xl.png" />
+          </div>
+          <h2 class="product-title">Predo Sanitary Pads extra-long</h2>
+          <div class="price-and-cart">
+            <span class="price">$1</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+    <footer class="section-p1">
+      <div class="col">
+        <img
+          class="log"
+          src="images/f logo  (1).png"
+          class="logo"
+          alt=""
+        />
+        <h4>Contact</h4>
+        <p><strong>Address :</strong>shop 11 new complex</p>
+        <p><strong>Hours :</strong> 0830 - 1745</p>
+        <p><strong>Email :</strong>cmmdiapers@gmail.com</p>
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="main.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="term.html">Terms & Conditions</a>
+      </div>
+
+      <div class="dev">
+        <h4>Developed By TheDevRee</h4>
+        <p>
+          Contact The Developer
+          <a href="https://wa.me/263781216753"><span>Here</span></a>
+        </p>
+      </div>
+
+      <div class="copyright">
+        <p>© Apep Trading 2025. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+
+    <script src="scriptd.js"></script>
+  </body>
+</html>

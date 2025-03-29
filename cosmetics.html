@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Website - Shopping Cart | Codehal</title>
+    <link rel="stylesheet" href="stylec.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo">Apep Cosmetics</a>
+      <div id="cart-icon">
+        <i class="ri-shopping-bag-line"></i>
+        <span class="cart-item-count"></span>
+      </div>
+    </header>
+
+    <div class="cart">
+      <h2 class="cart-title">Your Cart</h2>
+
+      <div class="cart-content">
+      <!--  <div class="cart-box">
+          <img src="images/product1.jpg" class="cart-img" />
+          <div class="cart-detail">
+            <h2 class="cart-product-title">Casual Black Polo</h2>
+            <span class="cart-price">$100</span>
+            <div class="cart-quantity">
+              <button id="decrement">-</button>
+              <span class="number">1</span>
+              <button id="increment">+</button>
+            </div>
+          </div>
+          <i class="ri-delete-bin-line cart-remove"></i>
+        </div>-->
+      </div>
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+      </div>
+      <button class="btn-buy">Buy Now</button>
+      <i class="ri-close-line" id="cart-close"></i>
+    </div>
+    
+
+
+
+    <section class="shop">
+      <h1 class="section-title">Shop Products</h1>
+      <div class="product-content">
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos body creme.png" />
+          </div>
+          <h2 class="product-title">Cosmo Body Creams (500ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$3</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos baby lotion.png"/>
+          </div>
+          <h2 class="product-title">Cosmo Baby Lotion (500ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$2</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos toner.png" />
+          </div>
+          <h2 class="product-title">Cosmo Fregrance Mist (250ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$3</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos lotion 1l.png" />
+          </div>
+          <h2 class="product-title">Cosmo Body Lotion (1000ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$5</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos lotion papa.png" />
+          </div>
+          <h2 class="product-title">Cosmo Body Lotion(480ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$3</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+            <div class="img-box">
+              <img src="images/2 scrub bri.png" />
+            </div>
+            <h2 class="product-title">Cosmo Body Shower Scrub (475ml)</h2>
+            <div class="price-and-cart">
+              <span class="price">$4</span>
+              <i class="ri-shopping-bag-line add-cart"></i>
+            </div>
+          </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/shower scrub.png" />
+          </div>
+          <h2 class="product-title">Cosmo Body Shower Scrub (480ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$4</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos baby wash.png" />
+          </div>
+          <h2 class="product-title">Cosmo Baby Wash (500ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$2</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/2 conditioner.png" />
+          </div>
+          <h2 class="product-title">Cosmo Conditioner (1ltr)</h2>
+          <div class="price-and-cart">
+            <span class="price">$5</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos vita c.png" />
+          </div>
+          <h2 class="product-title">Cosmo Vitamin C Day Cream (50ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$4</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos toner.png" />
+          </div>
+          <h2 class="product-title">Cosmo Cleansing Toner (250ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$2</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos face wash 2.png" />
+          </div>
+          <h2 class="product-title">Cosmo Face Wash(150ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$2</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos facewash 4.png" />
+          </div>
+          <h2 class="product-title">Cosmo Face Wash (175ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$4</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos hair cream.png" />
+          </div>
+          <h2 class="product-title">Cosmo Hair Cream (500g)</h2>
+          <div class="price-and-cart">
+            <span class="price">$2.50</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos hairfood.png" />
+          </div>
+          <h2 class="product-title">Cosmo Hair Food (170ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$2</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos hair oil.png" />
+          </div>
+          <h2 class="product-title">Cosmo Hair Oil (200ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$1.50</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos hair remover.png" />
+          </div>
+          <h2 class="product-title">Cosmo Hair Removal Cream (100g)</h2>
+          <div class="price-and-cart">
+            <span class="price">$2</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos day cream.png" />
+          </div>
+          <h2 class="product-title">Cosmo All Day Moist Cream (250ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$3</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/2 500 lotion.png" />
+          </div>
+          <h2 class="product-title">Cosmo Natural Body lotion (750ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$4</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/2 cos night.png" />
+          </div>
+          <h2 class="product-title">Cosmo Night Repairing Cream(250ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$3</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos body lotion 500ml.png" />
+          </div>
+          <h2 class="product-title">Cosmo Brightening Lotion(500ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$5</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos shower gel bri.png" />
+          </div>
+          <h2 class="product-title">Cosmo Brightening Shower Gel(1ltr)</h2>
+          <div class="price-and-cart">
+            <span class="price">$5</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos shampoos.png" />
+          </div>
+          <h2 class="product-title">Cosmo Shampoos(1ltr)</h2>
+          <div class="price-and-cart">
+            <span class="price">$5</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos shower gel whi.png" />
+          </div>
+          <h2 class="product-title">Cosmo Whitening Gel(1ltr)</h2>
+          <div class="price-and-cart">
+            <span class="price">$5</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/2 white 500.png" />
+          </div>
+          <h2 class="product-title">Cosmo Whitening Lotion(500ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$5</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/co white cream.png" />
+          </div>
+          <h2 class="product-title">Cosmo Whitening Face Cream(125ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$3</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos face scrub.png" />
+          </div>
+          <h2 class="product-title">Cosmo Scrub Tube(170ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$5</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/2 serum.png" />
+          </div>
+          <h2 class="product-title">Cosmo Facial Serum(65ml)</h2>
+          <div class="price-and-cart">
+            <span class="price">$4</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/2 mist heaven.png" />
+          </div>
+          <h2 class="product-title">Oh So Heavenly Body Mist</h2>
+          <div class="price-and-cart">
+            <span class="price">$3.50</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos heavenly cream.png" />
+          </div>
+          <h2 class="product-title">Oh So Heavenly Cream</h2>
+          <div class="price-and-cart">
+            <span class="price">$5</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/2 q10 heaven.png" />
+          </div>
+          <h2 class="product-title">Oh So Heavenly Q10</h2>
+          <div class="price-and-cart">
+            <span class="price">$6.50</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos heavenly lotion.png" />
+          </div>
+          <h2 class="product-title">Oh So Heavenly Lotion(1ltr)</h2>
+          <div class="price-and-cart">
+            <span class="price">$6.50</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/2 heaven bath.png" />
+          </div>
+          <h2 class="product-title">Oh So Heavenly Foam Bath</h2>
+          <div class="price-and-cart">
+            <span class="price">$6</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/2 lux bath.png" />
+          </div>
+          <h2 class="product-title">Lux Shower Gel</h2>
+          <div class="price-and-cart">
+            <span class="price">$5</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/cos olive hair.png" />
+          </div>
+          <h2 class="product-title">Olive Oil Spray</h2>
+          <div class="price-and-cart">
+            <span class="price">$2</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/2 wig cap.png" />
+          </div>
+          <h2 class="product-title">Wig Cap</h2>
+          <div class="price-and-cart">
+            <span class="price">$0.50</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/2 comb.png" />
+          </div>
+          <h2 class="product-title">Telcomb</h2>
+          <div class="price-and-cart">
+            <span class="price">$0.25</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/2 lux.png" />
+          </div>
+          <h2 class="product-title">Lux Soap</h2>
+          <div class="price-and-cart">
+            <span class="price">$1</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/2 roll on.png" />
+          </div>
+          <h2 class="product-title">Nivea Roll-On</h2>
+          <div class="price-and-cart">
+            <span class="price">$2</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <img src="images/2 glade.png" />
+          </div>
+          <h2 class="product-title">Glade Air-freshner</h2>
+          <div class="price-and-cart">
+            <span class="price">$5</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+        <div class="product-box">
+            <div class="img-box">
+              <img src="images/cos niv q10.png" />
+            </div>
+            <h2 class="product-title">Nivea lotion Q10</h2>
+            <div class="price-and-cart">
+              <span class="price">$9</span>
+              <i class="ri-shopping-bag-line add-cart"></i>
+            </div>
+          </div>
+          <div class="product-box">
+            <div class="img-box">
+              <img src="images/cos dove.png" />
+            </div>
+            <h2 class="product-title">Dove Shower Gel</h2>
+            <div class="price-and-cart">
+              <span class="price">$5</span>
+              <i class="ri-shopping-bag-line add-cart"></i>
+            </div>
+          </div>
+      </div>
+    </section>
+
+
+    
+    <footer class="section-p1">
+      <div class="col">
+        <img
+          class="log"
+          src="images/f logo  (1).png"
+          class="logo"
+          alt=""
+        />
+        <h4>Contact</h4>
+        <p><strong>Address :</strong>shop 11 new complex</p>
+        <p><strong>Hours :</strong> 0830 - 1745</p>
+        <p><strong>Email :</strong>cmmdiapers@gmail.com</p>
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="main.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="term.html">Terms & Conditions</a>
+      </div>
+
+      <div class="dev">
+        <h4>Developed By TheDevRee</h4>
+        <p>
+          Contact The Developer
+          <a href="https://wa.me/263781216753"><span>Here</span></a>
+        </p>
+      </div>
+
+      <div class="copyright">
+        <p>© Apep Trading 2025. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+
+    <script src="scriptc.js"></script>
+  </body>
+</html>

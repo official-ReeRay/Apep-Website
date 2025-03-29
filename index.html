@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            flex-direction: column;
+        }
+
+        .logo img {
+            width: 200px; /* Adjust size as needed */
+            height: auto;
+        }
+
+        .loading-bar {
+            width: 200px;
+            height: 4px;
+            background: #e0e0e0;
+            margin-top: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            width: 0%;
+            background: #002a8d; /* Same color as logo */
+            animation: loading 3s forwards;
+        }
+
+        @keyframes loading {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="images/f logo  (1).png" alt="Logo">
+    </div>
+    <div class="loading-bar">
+        <div class="progress"></div>
+    </div>
+
+    <script>
+        // Redirect when loading completes
+        setTimeout(() => {
+            window.location.href = "main.html"; 
+        }, 3000); // Matches animation duration
+    </script>
+
+</body>
+</html>
